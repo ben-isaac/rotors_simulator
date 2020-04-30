@@ -102,7 +102,7 @@
       </inertial>
       <visual>
         <geometry>
-          <!-- <cylinder length="0.005" radius="${radius_rotor}"/> --> <!-- [m] -->
+                  <!-- <cylinder length="0.005" radius="${radius_rotor}"/> --> <!-- [m] -->
           <xacro:if value="${use_own_mesh}">
             <mesh filename="${mesh}"
               scale="1 1 1" />
