@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <launch>
-  <arg name="mav_name" default="dji_matrice_210_v1"/>
+  <arg name="mav_name" default="pelican"/>
   <arg name="world_name" default="basic"/>
   <arg name="enable_logging" default="false"/>
   <arg name="enable_ground_truth" default="true"/>
@@ -83,9 +83,5 @@
       <param name="topic_from_plant" value="yaw_state" />
       <param name="setpoint_topic" value="command/yaw_ref" />
     </node>
-    <!-- rqt -->
-<node name="rqt_reconfigure" pkg="rqt_reconfigure" type="rqt_reconfigure" />
-<node name="rqt_publisher" pkg="rqt_publisher" type="rqt_publisher" />
-
   </group>
 </launch>
